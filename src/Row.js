@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Row.css';
 import YouTube from 'react-youtube';
-import movieTrailer from 'movie-trailer';
+/* import movieTrailer from 'movie-trailer'; */
 
 
 const baseImgUrl = "https://image.tmdb.org/t/p/original";
@@ -32,16 +32,14 @@ function Row({title, fetchUrl, isLargeRow}) {
 
 /*     console.log(movies) */
 
-const handleClick =  (movie) => {
+const handleClick = async (movie) => {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-      movieTrailer(movie?.name || "")
-      .then((url) => {
-          const urlParams = new URLSearchParams(new URL(url).search);
-          setTrailerUrl(urlParams.get('v'));
-      })
-      .catch((error) => console.log(error))
+      let trailerurl = await axios.get(
+        `https://api.themoviedb.org/3/movie/${movie.id}/videos?api_key=57e6f5efdc3c70fc78a1a07116fc7c4f`
+      );
+      setTrailerUrl(trailerurl.data.results[0]?.key);
     }
   };
 
