@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Expected Outcome
+
+![Project 008 Snapshot](netflix.png)
+
+## Description
+
+Project aims to create a Netflix Clone.
+
+## Problem Statement
+
+- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -69,15 +81,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-
-
-
 // https://console.firebase.google.com/project/netflix-clone-2f5bc/overview
-
-
-
-
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -88,13 +92,13 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCQ1Y-IUDj2Jcew7BEFIzz6Uc4hBZSYm7E",
-  authDomain: "netflix-clone-2f5bc.firebaseapp.com",
-  projectId: "netflix-clone-2f5bc",
-  storageBucket: "netflix-clone-2f5bc.appspot.com",
-  messagingSenderId: "784604252170",
-  appId: "1:784604252170:web:3ff53eac484c740948f7f3",
-  measurementId: "G-H4T3BDJ2MT"
+apiKey: "AIzaSyCQ1Y-IUDj2Jcew7BEFIzz6Uc4hBZSYm7E",
+authDomain: "netflix-clone-2f5bc.firebaseapp.com",
+projectId: "netflix-clone-2f5bc",
+storageBucket: "netflix-clone-2f5bc.appspot.com",
+messagingSenderId: "784604252170",
+appId: "1:784604252170:web:3ff53eac484c740948f7f3",
+measurementId: "G-H4T3BDJ2MT"
 };
 
 // Initialize Firebase
